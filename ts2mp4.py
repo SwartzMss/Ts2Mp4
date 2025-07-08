@@ -8,8 +8,8 @@ ts_dir = r"E:\efa29ee11eac761eef3b848200b932bb\0bc36iazqaabg4aj7d3dlrrkf4wdtdzad
 local_m3u8 = os.path.join(ts_dir, "local.m3u8")
 output_mp4 = os.path.join(ts_dir, "output.mp4")
 
-# ffmpeg.exe 路径（假设和脚本在同一目录）
-ffmpeg_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ffmpeg.exe")
+# ffmpeg 可执行文件路径
+FFMPEG_PATH = os.path.join(os.path.dirname(__file__), 'ffmpeg', 'ffmpeg.exe')
 
 def natural_key(s):
     return [int(text) if text.isdigit() else text.lower() for text in re.split(r'([0-9]+)', s)]
@@ -32,7 +32,7 @@ print(f"本地 m3u8 文件已生成：{local_m3u8}")
 
 # 合成 mp4
 cmd = [
-    ffmpeg_path,
+    FFMPEG_PATH,
     "-allowed_extensions", "ALL",
     "-protocol_whitelist", "file,http,https,tcp,tls",
     "-y",  # 自动覆盖输出

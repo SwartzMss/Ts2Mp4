@@ -7,7 +7,8 @@
 ## 使用步骤
 1. 将所有 .ts 文件放入同一个文件夹（如：E:\...\0bc36iazqaabg4aj7d3dlrrkf4wdtdzadgca.f307110.hls_0_29）
 2. 修改 ts2mp4.py 中的 `ts_dir` 路径为你的 ts 文件夹路径
-3. 在命令行运行：
+3. 将 ffmpeg.exe 及相关 dll 文件全部放入项目的 ffmpeg 目录（已自动适配，无需手动修改路径）。
+4. 在命令行运行：
 
 ```bash
 python ts2mp4.py
