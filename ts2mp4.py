@@ -1,7 +1,7 @@
 import os, subprocess, sys, re, math
 
 # ts 文件目录
-ts_dir = r"C:\N-20N3PF2E83B6-Data\yuefshi\Downloads\0bc3tqai4aaaieait53crzrkhhgdr2oabdsa.f306110.hls\0bc3tqai4aaaieait53crzrkhhgdr2oabdsa.f306110.hls_0_29"
+ts_dir = r"Downloads\0bc3tqai4aaaieait53crzrkhhgdr2oabdsa.f306110.hls\0bc3tqai4aaaieait53crzrkhhgdr2oabdsa.f306110.hls_0_29"
 local_m3u8 = os.path.join(ts_dir, "local.m3u8")
 output_mp4 = os.path.join(ts_dir, "output.mp4")
 
